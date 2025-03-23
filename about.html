@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | FitLife Gym</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+      .hero {
+        background: url("./images/Client2_GroupKickboxing.png") center/cover
+          no-repeat;
+        color: white;
+        background-color: #333333a8;
+        background-blend-mode: darken;
+        text-align: center;
+        padding: 100px 10%;
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+        margin-top: 10px;
+      }
+
+      .about {
+        padding: 50px 10%;
+        text-align: center;
+      }
+
+      .about h2 {
+        font-size: 2.5rem;
+        color: var(--primary-color);
+      }
+
+      .about p {
+        font-size: 1.2rem;
+        margin-top: 10px;
+      }
+
+      .trainers {
+        padding: 50px 10%;
+        text-align: center;
+        background-color: #f8f8f8;
+      }
+
+      .trainers h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+      }
+
+      .trainer-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      }
+
+      .trainer {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .trainer img {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      .testimonials {
+        padding: 50px 10%;
+        text-align: center;
+      }
+
+      .testimonial-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+
+      .testimonial {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 300px;
+      }
+
+      .testimonial p {
+        font-style: italic;
+      }
+
+      .testimonial h4 {
+        margin-top: 10px;
+        font-size: 1.1rem;
+        color: var(--primary-color);
+      }
+
+      .cta {
+        text-align: center;
+        background: var(--primary-color);
+        color: white;
+        padding: 50px 10%;
+      }
+
+      .cta h2 {
+        font-size: 2.5rem;
+      }
+
+      .cta p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+      }
+
+      .cta-button {
+        background: white;
+        color: var(--primary-color);
+        padding: 12px 25px;
+        font-size: 1.2rem;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: 0.3s;
+      }
+
+      .cta-button:hover {
+        background: #f4f4f4;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./images/logo.png" alt="FitLife Gym Logo" />
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-text">
+        <h1>About FitLife Gym</h1>
+        <p>
+          Empowering your fitness journey with expert guidance, top-tier
+          equipment, and a supportive community.
+        </p>
+      </div>
+    </section>
+
+    <section class="about">
+      <h2>Who We Are</h2>
+      <p>
+        FitLife Gym is more than just a gym. We are a community of fitness
+        enthusiasts, professionals, and beginners striving to reach their full
+        potential. Our state-of-the-art facility, expert trainers, and diverse
+        fitness programs are designed to help you achieve your health and
+        fitness goals.
+      </p>
+      <p>
+        Founded in 2015, we have helped thousands of individuals transform their
+        lives through fitness and wellness. Whether you want to build muscle,
+        lose weight, or enhance athletic performance, we provide personalized
+        training and guidance to make it happen.
+      </p>
+    </section>
+
+    <section class="trainers">
+      <h2>Meet Our Trainers</h2>
+      <div class="trainer-grid">
+        <div class="trainer">
+          <img
+            src="./images/Client2_IndividualKickboxing.png"
+            alt="Trainer 1"
+          />
+          <h3>Michael Thompson</h3>
+          <p>Strength & Conditioning Expert</p>
+        </div>
+        <div class="trainer">
+          <img src="images/Client2_IndividualPilates.png" alt="Trainer 2" />
+          <h3>Sarah Williams</h3>
+          <p>Certified Personal Trainer & Nutritionist</p>
+        </div>
+        <div class="trainer">
+          <img src="images/Client2_IndividualYoga.png" alt="Trainer 3" />
+          <h3>James Lee</h3>
+          <p>Yoga & Flexibility Coach</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h2>What Our Clients Say</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial">
+          <p>
+            "FitLife Gym completely changed my perspective on fitness. The
+            trainers are knowledgeable, and the atmosphere is motivating!"
+          </p>
+          <h4>- Jessica Brown</h4>
+        </div>
+        <div class="testimonial">
+          <p>
+            "The best gym experience I’ve ever had. The classes are challenging
+            but fun, and the trainers push you to be your best!"
+          </p>
+          <h4>- Mark Johnson</h4>
+        </div>
+        <div class="testimonial">
+          <p>
+            "Amazing facilities and great people! I've lost 20 pounds and feel
+            healthier than ever!"
+          </p>
+          <h4>- Sophia Martinez</h4>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>Join Us Today!</h2>
+      <p>
+        Start your fitness journey with FitLife Gym. Sign up for a free trial
+        and experience the best training programs.
+      </p>
+      <a href="contact.html" class="cta-button">Get Started</a>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 FitLife Gym. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
